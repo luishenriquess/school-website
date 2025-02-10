@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henriques School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!------------ Header ------------>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imagens/logo.png" alt="Logotipo"></a>
+
+            <div class="menu-links" id="menuLinks">
+                <i class="fa fa-times" onclick="esconderMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                    <li><a href="cursos.html">CURSOS</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="aparecerMenu()"></i>
+        </nav>
+
+        <h1>CONTACTE-NOS</h1>
+
+    </section>
+
+    <!------------ Contacto ------------>
+
+    <section class="morada">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6010.999678577773!2d-8.622486656610356!3d41.123613217312766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24652a79d7e659%3A0x777cd47377e6b55!2sEscola%20Profissional%20de%20Gaia!5e0!3m2!1spt-PT!2spt!4v1725695674763!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contacto">
+        <div class="linha">
+            <div class="contacto-coluna">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Rua Diogo de Silves, 231</h5>
+                        <p>VNG, Porto, PT</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>227 338 423</h5>
+                        <p>Segunda a Sexta - 8:00 às 17:00</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@henriquesschool.com</h5>
+                        <p>Envia-nos um e-mail!</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contacto-coluna">
+                <form method="post" netlify>
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="text" name="assunto" placeholder="Assunto" required>
+                    <textarea rows="8" name="mensagem" placeholder="Escreve a tua mensagem..." required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!------------ Footer ------------>
+
+    <footer>
+        <div class="container">
+            <div class="section redes">
+                <h4>INFORMAÇÕES</h4>
+                <p>R. Diogo Silves, 231 4400 – 628 Vila Nova de Gaia <br> Segunda a Sexta - 8:00 às 17:00</p>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="section links">
+                <h4>PÁGINAS</h4>
+                <ul>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="section links">
+                <h4>PROJETOS</h4>
+                <ul>
+                    <li><a href="https://erasmus-plus.ec.europa.eu/pt-pt" target="_blank">Erasmus+</a></li>
+                    <li><a href="https://desportoescolar.dge.mec.pt/" target="_blank">Desporto Escolar</a></li>
+                    <li><a href="https://youth.europarl.europa.eu/pt/more-information/ambassador-school.html" target="_blank">Escola Embaixadora</a></li>
+                </ul>
+            </div>
+            <div class="section contacto">
+                <h4>CONTACTO</h4>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-phone"></i></span><p>+351 227 338 423</p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope-o"></i></span><p>info@henriquesschool.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!------------ JavaScript ------------>
+
+    <script>
+        var menuLinks = document.getElementById("menuLinks");
+        function aparecerMenu() {
+            menuLinks.style.right = "0";
+        }
+
+        function esconderMenu() {
+            menuLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
